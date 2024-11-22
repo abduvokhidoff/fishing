@@ -12,7 +12,7 @@ button.addEventListener('click', () => {
 
     fetch(`https://api.telegram.org/bot${Token}/sendMessage`, {
         method: 'POST',
-        header: {
+        headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
